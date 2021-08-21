@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/alex/Projets/Flipper/Task2/build",
-  "command": "/usr/bin/clang++-10    -g   -o CMakeFiles/Task2.dir/main.cpp.o -c /home/alex/Projets/Flipper/Task2/main.cpp",
-  "file": "/home/alex/Projets/Flipper/Task2/main.cpp"
+  "command": "/usr/bin/clang-10   -g   -o CMakeFiles/Task2.dir/main.c.o   -c /home/alex/Projets/Flipper/Task2/main.c",
+  "file": "/home/alex/Projets/Flipper/Task2/main.c"
 }
 ]
