@@ -9,6 +9,8 @@
 /home/alex/Projets/Flipper/Task1/main.c
 stdio.h
 -
+stdlib.h
+-
 string.h
 -
 
