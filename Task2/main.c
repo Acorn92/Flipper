@@ -39,7 +39,10 @@ void EquivalentKeypresses(char * strArr[], int arrLength) {
 
                 buf1 = (char*)malloc(len2);    
                 memcpy(buf1, strArr[i], len2);
-                buf1[lenStr - 3] = '\0';
+                if (lenStr == 2)
+                    buf1[1] = '\0';//если удалили первый элемент, то левая часть строки пустая
+                else
+                    buf1[lenStr - 3] = '\0';//затираем элемент перед символом удаления
                 buf1 = strcat(buf1, strnew);
                 //free(*strArr[i]);
             }
@@ -89,7 +92,7 @@ int main(void) {
   EquivalentKeypresses(A4, arrLength4);
   EquivalentKeypresses(A5, arrLength5);
   EquivalentKeypresses(A6, arrLength6);
-  EquivalentKeypresses(A6, arrLength7);
+  EquivalentKeypresses(A7, arrLength7);
   return 0;
     
 }
