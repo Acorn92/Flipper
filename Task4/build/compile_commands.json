@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/alex/Projets/Flipper/Task4/build",
+  "command": "/usr/bin/clang++-10    -g   -o CMakeFiles/Task4.dir/main.cpp.o -c /home/alex/Projets/Flipper/Task4/main.cpp",
+  "file": "/home/alex/Projets/Flipper/Task4/main.cpp"
+}
+]

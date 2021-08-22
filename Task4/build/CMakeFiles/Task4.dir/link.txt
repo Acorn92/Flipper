@@ -1,0 +1,1 @@
+/usr/bin/clang++-10  -g  -rdynamic CMakeFiles/Task4.dir/main.cpp.o  -o Task4 

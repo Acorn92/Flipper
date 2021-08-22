@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alex/Projets/Flipper/Task4/main.cpp
+iostream
+-
+string
+-
+vector
+-
+unordered_map
+-
+utility
+-
+cstdlib
+-
+
