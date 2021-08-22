@@ -1,4 +1,5 @@
 #include <stdio.h> 
+#include <stdlib.h>
 #include <string.h>
 
 void RectangleArea(char * strArr[], int arrLength) 
@@ -38,16 +39,18 @@ void RectangleArea(char * strArr[], int arrLength)
             ymin = (int)(*y - '0');
 
         if ((int)(*y - '0') >= ymax) 
-            ymax = (int)(*y - '0');
-        
-
-
+            ymax = (int)(*y - '0');      
 
     }
-    width = xmax - xmin;
-    height = ymax - ymin;
+    if (xmin < 0)
+        width = xmax + abs(xmin);
+    else
+        width = xmax - xmin;
+    if (ymin < 0)
+        height = ymax + abs(ymin);
+    else
+        height = ymax - ymin;
     int S = height * width;
-    //strArr[i]
   //найти высоту
     printf("%d\n", S);
 
@@ -60,12 +63,21 @@ int main(void) {
   char * A[] = {"(1 1)","(1 3)","(3 1)","(3 3)"};
   char * A1[] = {"(0 0)","(1 0)","(1 1)","(0 1)"};
   char * A2[] = {"(0 0)","(0 0)","(0 0)","(0 0)"};
+  char * A3[] = {"(-1 -1)","(0 0)","(-1 0)","(0 -1)"};
+  char * A4[] = {"(-2 -2)","(0 0)","(-2 0)","(0 -2)"};
+  char * A5[] = {"(3 3)","(0 0)","(3 0)","(0 3)"};
   int arrLength = sizeof(A) / sizeof(*A);
   int arrLength1 = sizeof(A1) / sizeof(*A1);
   int arrLength2 = sizeof(A2) / sizeof(*A2);
+  int arrLength3 = sizeof(A3) / sizeof(*A3);
+  int arrLength4 = sizeof(A4) / sizeof(*A4);
+  int arrLength5 = sizeof(A5) / sizeof(*A5);
   RectangleArea(A, arrLength);
   RectangleArea(A1, arrLength1);
   RectangleArea(A2, arrLength2);
+  RectangleArea(A3, arrLength2);
+  RectangleArea(A4, arrLength2);
+  RectangleArea(A5, arrLength2);
   return 0;
     
 }
