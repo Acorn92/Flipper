@@ -1,0 +1,1 @@
+/usr/bin/clang-10 -g  -rdynamic CMakeFiles/Task3.dir/main.c.o  -o Task3 
